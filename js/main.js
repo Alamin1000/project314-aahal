@@ -25,6 +25,35 @@
   });
 
   // owl-carousel
+  $(".planta-slider-active").owlCarousel({
+    loop: true,
+    margin: 50,
+    responsiveClass: true,
+    nav: true,
+    dots: false,
+    items: 1,
+    smartSpeed: 1300,
+    navText: [
+      '<img src="images/chebron-duble-left.png" alt="">',
+      '<img src="images/chebron-duble-right.png" alt="">',
+    ],
+  });
+
+  var departSliderActive = $("#departSliderActive");
+  departSliderActive.owlCarousel({
+    loop: true,
+    margin: 50,
+    responsiveClass: true,
+    nav: true,
+    dots: false,
+    items: 1,
+    smartSpeed: 1300,
+    navText: [
+      '<img src="images/chevron-left.png" alt="">',
+      '<img src="images/chevron-right.png" alt="">',
+    ],
+  });
+
   $(".brand-active").owlCarousel({
     loop: true,
     margin: 50,
