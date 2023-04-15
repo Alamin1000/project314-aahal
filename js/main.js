@@ -54,6 +54,20 @@
     ],
   });
 
+  $(".gallery-slider-active").owlCarousel({
+    loop: true,
+    margin: 0,
+    responsiveClass: true,
+    nav: true,
+    dots: false,
+    items: 1,
+    smartSpeed: 1300,
+    navText: [
+      '<img src="images/chevron-left.png" alt="">',
+      '<img src="images/chevron-right.png" alt="">',
+    ],
+  });
+
   $(".brand-active").owlCarousel({
     loop: true,
     margin: 50,
