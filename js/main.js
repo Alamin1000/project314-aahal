@@ -27,7 +27,7 @@
   // owl-carousel
   $(".planta-slider-active").owlCarousel({
     loop: true,
-    margin: 50,
+    margin: 0,
     responsiveClass: true,
     nav: true,
     dots: false,
@@ -42,7 +42,7 @@
   var departSliderActive = $("#departSliderActive");
   departSliderActive.owlCarousel({
     loop: true,
-    margin: 50,
+    margin: 0,
     responsiveClass: true,
     nav: true,
     dots: false,
