@@ -116,6 +116,9 @@
         --space-padding: 180px;
         width: calc(50% + 200px + var(--space-padding));
     }
+    .planta-slider__outer::after {
+        width: calc(50% + 200px);
+    }
 
 
     .depart-op__icon {
@@ -430,6 +433,9 @@
         --space-padding: 60px;
         width: calc(50% + 100px + var(--space-padding));
     }
+    .planta-slider__outer::after {
+        width: calc(50% + 100px);
+    }
     .planta-slide-cont .box-text {
         margin: 0 0 15px;
         font-size: 12px;
@@ -651,7 +657,12 @@
 
 
 @media (max-width: 575px) {
- 
+    .planta-slider__outer .container {
+        padding: 0;
+    }
+    .planta-slide-cont {
+        padding-left: 12px;
+    }
 }
 
 

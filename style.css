@@ -695,21 +695,26 @@ p:last-child{
 
 }
 
-.planta-slider {
+.planta-slider__outer {
   --space-padding: 210px;
-	width: calc(50% + 270px + var(--space-padding));
+  position: relative;
   z-index: 1;
 }
-.planta-slider::after {
+.planta-slider__outer::after {
   content: '';
   height: 100%;
-  width: calc(100% - var(--space-padding));
+	width: calc(50% + 270px);
   background: url('images/planta-slide-1-image.png') no-repeat center center/cover;
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
+}
+.planta-slider {
+  --space-padding: 210px;
+	width: calc(50% + 270px + var(--space-padding));
+  z-index: 1;
 }
 .planta-slider .owl-nav button {
   transition: 0.3s;
@@ -743,10 +748,10 @@ p:last-child{
 }
 .planta-slide-cont__inner {
   max-width: 910px;
+  max-width: initial !important;
   width: 100%;
   position: relative;
   z-index: 1;
-  padding-left: 12px;
 }
 .planta-slide-cont__inner .flt-img {
 	width: 680px !important;
