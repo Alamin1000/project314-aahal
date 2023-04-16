@@ -361,8 +361,10 @@ p:last-child{
   color: #fff;
   position: absolute;
   transition: 0.3s;
-  right: 25px;
-  top: 25px;
+  right: 15px;
+  top: 15px;
+  font-size: 18px;
+  line-height: 1;
 }
 .offcanvas-close:hover {
   color: #97A3AE;
