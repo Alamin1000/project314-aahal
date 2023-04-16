@@ -10,6 +10,7 @@
     <meta name="description" content="Site description will be here" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
     <link
       href="https://kit-pro.fontawesome.com/releases/v5.15.2/css/pro.min.css"
       rel="stylesheet"
@@ -28,29 +29,28 @@
     <div class="main-wrap">
       <!-- offcanvas-start -->
       <div class="offcanvas-menu">
-        <ul class="offmenu" id="menuParent">
+        <div class="offmenu" id="menuParent">
           <a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-          <li class="active"><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li class="dropdown">
-            <a href="#" data-bs-toggle="collapse" data-bs-target="#drop-menu1"
-              >OUR HORSES</a
-            >
-            <div
-              class="dropdown-menu-custom collapse"
-              id="drop-menu1"
-              data-bs-parent="#menuParent"
-            >
-              <ul>
-                <li><a href="#">YEARLINGS</a></li>
-                <li><a href="#">2 YEAR OLDS</a></li>
-                <li><a href="#">3 YEAR OLD PLUS</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">LATEST NEWS</a></li>
-          <li><a href="#">CONTACT & FIND US</a></li>
-        </ul>
+          <ul class="mobile-menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#habitats-section">HABITATS</a></li>
+            <li><a href="#ubi-section">ubicación</a></li>
+            <li><a href="#inverter-section">INVIERTE</a></li>
+            <li><a href="#gallery-section">galería</a></li>
+            <li><a href="#contact-section">CONTACTO</a></li>
+          </ul>
+          <ul class="hs-menu justify-content-center mt-3">
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="offcanvas-overlay"></div>
       <!-- offcanvas-start-end -->
@@ -63,17 +63,17 @@
               <a href="index.html" class="header__logo">
                 <img src="images/LOGO.png" alt="" />
               </a>
-              <div class="main-menu">
+              <div class="main-menu d-lg-block d-none">
                 <ul>
                   <li><a href="#">HOME</a></li>
-                  <li><a href="#">HABITATS</a></li>
-                  <li><a href="#">ubicación</a></li>
-                  <li><a href="#">INVIERTE</a></li>
-                  <li><a href="#">galería</a></li>
-                  <li><a href="#">CONTACTO</a></li>
+                  <li><a href="#habitats-section">HABITATS</a></li>
+                  <li><a href="#ubi-section">ubicación</a></li>
+                  <li><a href="#inverter-section">INVIERTE</a></li>
+                  <li><a href="#gallery-section">galería</a></li>
+                  <li><a href="#contact-section">CONTACTO</a></li>
                 </ul>
               </div>
-              <ul class="hs-menu">
+              <ul class="hs-menu d-lg-flex d-none">
                 <li>
                   <a href="#"><i class="fab fa-instagram"></i></a>
                 </li>
@@ -84,6 +84,9 @@
                   <a href="#"><i class="fab fa-youtube"></i></a>
                 </li>
               </ul>
+              <a href="#" class="offcanvas-open d-lg-none">
+                <i class="far fa-bars"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -95,7 +98,7 @@
         <!-- hero-section -->
         <section class="hero-section">
           <div class="hero-video-bg">
-            <video src="images/ship-in-sea.mp4" muted loop></video>
+            <video src="images/ship-in-sea.mp4" muted loop autoplay></video>
           </div>
           <div class="hero-section__inner">
             <div class="hero-logo__banner">
@@ -117,7 +120,7 @@
         <!-- hero-section end -->
 
         <!-- habitats-section -->
-        <section class="habitats-section">
+        <section class="habitats-section" id="habitats-section">
           <div class="section__title">
             <h2 class="mb-0">HABITATS</h2>
           </div>
@@ -554,7 +557,7 @@
         <!-- depart-section-end -->
 
         <!-- ubi-section -->
-        <section class="ubi-section">
+        <section class="ubi-section" id="ubi-section">
           <div class="section__title">
             <h2 class="mb-0">UBICACIÓN</h2>
           </div>
@@ -563,7 +566,12 @@
               <img
                 src="images/ubi-map-full.png"
                 alt=""
-                class="ubi__map__image"
+                class="ubi__map__image d-md-block d-none"
+              />
+              <img
+                src="images/ubi-map-full-mobile.png"
+                alt=""
+                class="ubi__map__image d-md-none"
               />
             </div>
           </div>
@@ -602,7 +610,7 @@
         <!-- mp-section-end -->
 
         <!-- inviter-section -->
-        <section class="inviter-section">
+        <section class="inviter-section" id="inverter-section">
           <div class="section__title">
             <h2 class="mb-0">INVIERTE</h2>
           </div>
@@ -698,8 +706,8 @@
               <div class="tlm__ud">
                 <h4>
                   <span class="fw-700">DISFRUTA</span> el espacio y
-                  <span class="fw-700">RÉNTALO</span> cuando no lo ocupes sin
-                  preocuparte.
+                  <span class="fw-700">RÉNTALO</span> <br class="d-sm-none" />
+                  cuando no lo ocupes sin preocuparte.
                 </h4>
                 <div class="tlm-ud-box">
                   <div class="tlm-ud-box__option">
@@ -735,7 +743,7 @@
         <!-- tulum-section-end -->
 
         <!-- gallery-section -->
-        <section class="gallery-section">
+        <section class="gallery-section" id="gallery-section">
           <div class="section__title">
             <h2 class="mb-0">GALERÍA</h2>
           </div>
@@ -772,31 +780,40 @@
                 <div class="col-3">
                   <div class="row g-3">
                     <div class="col-12">
-                      <div class="life-style-gallery-item">
+                      <a
+                        href="images/lifestyle-img-1.png"
+                        class="life-style-gallery-item popup-img"
+                      >
                         <img
                           src="images/lifestyle-img-1.png"
                           alt=""
                           class="img"
                         />
-                      </div>
+                      </a>
                     </div>
                     <div class="col-12">
-                      <div class="life-style-gallery-item">
+                      <a
+                        href="images/lifestyle-img-2.png"
+                        class="life-style-gallery-item popup-img"
+                      >
                         <img
                           src="images/lifestyle-img-2.png"
                           alt=""
                           class="img"
                         />
-                      </div>
+                      </a>
                     </div>
                     <div class="col-12">
-                      <div class="life-style-gallery-item">
+                      <a
+                        href="images/lifestyle-img-3.png"
+                        class="life-style-gallery-item popup-img"
+                      >
                         <img
                           src="images/lifestyle-img-3.png"
                           alt=""
                           class="img"
                         />
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -804,31 +821,40 @@
                 <div class="col-5">
                   <div class="row g-3">
                     <div class="col-5">
-                      <div class="life-style-gallery-item">
+                      <a
+                        href="images/lifestyle-img-4.png"
+                        class="life-style-gallery-item popup-img"
+                      >
                         <img
                           src="images/lifestyle-img-4.png"
                           alt=""
                           class="img"
                         />
-                      </div>
+                      </a>
                     </div>
                     <div class="col-7">
-                      <div class="life-style-gallery-item">
+                      <a
+                        href="images/lifestyle-img-5.png"
+                        class="life-style-gallery-item popup-img"
+                      >
                         <img
                           src="images/lifestyle-img-5.png"
                           alt=""
                           class="img"
                         />
-                      </div>
+                      </a>
                     </div>
                     <div class="col-12">
-                      <div class="life-style-gallery-item">
+                      <a
+                        href="images/lifestyle-img-6.png"
+                        class="life-style-gallery-item popup-img"
+                      >
                         <img
                           src="images/lifestyle-img-6.png"
                           alt=""
                           class="img"
                         />
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -836,22 +862,28 @@
                 <div class="col-4">
                   <div class="row g-3">
                     <div class="col-12">
-                      <div class="life-style-gallery-item">
+                      <a
+                        href="images/lifestyle-img-7.png"
+                        class="life-style-gallery-item popup-img"
+                      >
                         <img
                           src="images/lifestyle-img-7.png"
                           alt=""
                           class="img"
                         />
-                      </div>
+                      </a>
                     </div>
                     <div class="col-12">
-                      <div class="life-style-gallery-item">
+                      <a
+                        href="images/lifestyle-img-8.png"
+                        class="life-style-gallery-item popup-img"
+                      >
                         <img
                           src="images/lifestyle-img-8.png"
                           alt=""
                           class="img"
                         />
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -862,18 +894,20 @@
         <!-- lifestyle-section-end -->
 
         <!-- contact-section -->
-        <seciotn class="contact-section">
+        <section class="contact-section" id="contact-section">
           <div class="container">
             <div class="contact-section__inner">
               <div class="contact-section__title">
                 <h2>CONTACTO</h2>
                 <h4 class="mb-0">
-                  aahal.com / contacto@aahal.com / 984 450 2434
+                  <a href="#">aahal.com /</a>
+                  <a href="#">contacto@aahal.com /</a>
+                  <a href="#">984 450 2434</a>
                 </h4>
               </div>
 
               <div class="contact-form">
-                <div class="contact-form__main row">
+                <div class="contact-form__main row g-md-4 g-2">
                   <div class="col-12">
                     <div class="single-input-x">
                       <label class="label-x">Nombre</label>
@@ -903,9 +937,22 @@
                   <button class="contact-submit">ENVIAR</button>
                 </div>
               </div>
+              <ul
+                class="hs-menu justify-content-center mt-2 d-md-none color-white"
+              >
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
-        </seciotn>
+        </section>
         <!-- contact-section-end -->
       </main>
       <!-- main end -->
@@ -921,6 +968,10 @@
         </div>
       </footer>
       <!--End footer-section -->
+
+      <div class="page-bottom-img">
+        <img src="images/bottom-water.png" alt="" class="img" />
+      </div>
     </div>
     <!-- main-wrap -->
 
@@ -928,6 +979,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
     <!-- End All Js -->
   </body>
