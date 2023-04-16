@@ -1,4 +1,8 @@
-
+@media (max-width: 1699px) {
+    .habitats__left-image {
+        width: 850px;
+    }
+}
 
 @media (max-width: 1399px) {
     .main-menu > ul > li a {
@@ -15,6 +19,10 @@
     }
     .header-in {
         padding: 8px 0;
+    }
+
+    .habitats__left-image {
+        width: 800px;
     }
 
     .hero-section::after {

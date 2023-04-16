@@ -584,12 +584,12 @@ p:last-child{
   z-index: 1;
 }
 .habitats__left-image {
-  width: 900px;
-  max-width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+	width: 50vw;
+	max-width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
 }
 .habitats-section__inner {
   display: flex;
