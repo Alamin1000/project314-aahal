@@ -698,6 +698,18 @@ p:last-child{
 .planta-slider {
   --space-padding: 210px;
 	width: calc(50% + 270px + var(--space-padding));
+  z-index: 1;
+}
+.planta-slider::after {
+  content: '';
+  height: 100%;
+  width: calc(100% - var(--space-padding));
+  background: url('images/planta-slide-1-image.png') no-repeat center center/cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 .planta-slider .owl-nav button {
   transition: 0.3s;
@@ -723,7 +735,8 @@ p:last-child{
 .planta-slide-cont {
 	padding: 190px 0;
 
-	background: url('images/planta-slide-1-image.png') no-repeat center center/cover;
+	/* background: url('images/planta-slide-1-image.png') no-repeat center center/cover; */
+  background: transparent;
 	color: #fff;
 	display: flex;
 	justify-content: flex-end;
