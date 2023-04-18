@@ -49,8 +49,8 @@
     items: 1,
     smartSpeed: 1300,
     navText: [
-      '<img src="images/chebron-duble-left.png" alt="">',
-      '<img src="images/chebron-duble-right.png" alt="">',
+      '<img src="images/chebron-duble-left.webp" alt="">',
+      '<img src="images/chebron-duble-right.webp" alt="">',
     ],
   });
 
