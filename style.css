@@ -181,7 +181,7 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   font-family: var(--gotham);
-  background: url('images/background.png') repeat center top/100% auto;
+  background: url('images/background.webp') repeat center top/100% auto;
 }
 a, a:active, a:focus, a:active, a:hover {
   text-decoration:none !important;
@@ -262,11 +262,15 @@ p:last-child{
   left: 0;
   width: 100%;
   z-index: 100;
-  background: url('images/texture.png') no-repeat center center/cover;
   color: #fff;
 }
 .header-in {
   padding: 10px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: url('images/texture.webp') no-repeat center center/cover;
 }
 .header-section__inner {
   display: flex;
@@ -548,7 +552,7 @@ p:last-child{
 .section__title {
   padding: 13px 15px;
   text-align: center;
-  background: url('images/texture.png') no-repeat center center/cover;
+  background: url('images/texture.webp') no-repeat center center/cover;
   color: #fff;
 }
 .section__title h2 {
@@ -704,7 +708,7 @@ p:last-child{
   content: '';
   height: 100%;
 	width: calc(50% + 270px);
-  background: url('images/planta-slide-1-image.png') no-repeat center center/cover;
+  background: url('images/planta-slide-1-image.webp') no-repeat center center/cover;
   display: block;
   position: absolute;
   top: 0;
@@ -740,7 +744,7 @@ p:last-child{
 .planta-slide-cont {
 	padding: 190px 0;
 
-	/* background: url('images/planta-slide-1-image.png') no-repeat center center/cover; */
+	/* background: url('images/planta-slide-1-image.webp') no-repeat center center/cover; */
   background: transparent;
 	color: #fff;
 	display: flex;
@@ -905,7 +909,7 @@ width: 100%;
 .mp__content {
 	padding: 70px 50px;
 	width: 55%;
-	background: url('images/mp-cont-bg.png') no-repeat center center/cover;
+	background: url('images/mp-cont-bg.webp') no-repeat center center/cover;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

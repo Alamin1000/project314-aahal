@@ -1,6 +1,21 @@
 (function ($) {
   "use strict";
 
+  var wind = $(window);
+  var sticky = $("#sticky-header");
+  wind.on("scroll", function () {
+    var scroll = wind.scrollTop();
+    if (scroll < 5) {
+      sticky.removeClass("sticky");
+    } else {
+      sticky.addClass("sticky");
+    }
+  });
+  $(window).on("load resize", function () {
+    $(".header-section").height($(".header-in").outerHeight());
+    $("body").css("--header-height", $(".header-in").outerHeight() + "px");
+  });
+
   // offcanvas-js
   $(".offcanvas-open").click(function () {
     $(".offcanvas-menu").addClass("active");
@@ -49,8 +64,8 @@
     items: 1,
     smartSpeed: 1300,
     navText: [
-      '<img src="images/chevron-left.png" alt="">',
-      '<img src="images/chevron-right.png" alt="">',
+      '<img src="images/chevron-left.webp" alt="">',
+      '<img src="images/chevron-right.webp" alt="">',
     ],
   });
 
@@ -63,8 +78,8 @@
     items: 1,
     smartSpeed: 1300,
     navText: [
-      '<img src="images/chevron-left.png" alt="">',
-      '<img src="images/chevron-right.png" alt="">',
+      '<img src="images/chevron-left.webp" alt="">',
+      '<img src="images/chevron-right.webp" alt="">',
     ],
   });
 
@@ -109,10 +124,10 @@
     },
   });
   //multiple-img-gallery
-  $(".image-box").each(function () {
+  $(".common-image-gallery").each(function () {
     // the containers for all your galleries
     $(this).magnificPopup({
-      delegate: ".img", // the selector for gallery item
+      delegate: ".common-img-item", // the selector for gallery item
       type: "image",
       gallery: {
         enabled: true,
