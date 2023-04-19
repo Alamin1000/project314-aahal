@@ -453,7 +453,7 @@
         margin-bottom: 4px;
     }
     .planta-slide-cont {
-        padding: 60px 0;
+        padding: 56px 0;
     }
     .planta-slide-cont__inner .flt-img {
         width: 200px !important;
@@ -530,10 +530,14 @@
     }
     .tulum-options__wrap {
         flex-wrap: wrap;
+        justify-content: center;
     }
     .tulum-option {
         width: 33.33333%;
         padding: 15px 5px;
+    }
+    .tulum-option:nth-child(n+4) {
+        width: 28%;
     }
     .tlm__ud p {
         font-size: 10px;
@@ -689,3 +693,80 @@
         height: 770px;
     }
 }
+
+
+/* big-mobile */
+@media (min-width: 390px) and (max-width: 567px) {
+    .section__title h2 {
+        font-size: 35px;
+    }
+
+    .habitats__left-image {
+        width: 490px;
+    }
+    .habitats__content {
+        padding: 370px 0 50px;
+    }
+    .habitats__content__part-1 {
+        max-width: 410px;
+        width: 100%;
+    }
+    .habitats__content .bx_1 {
+        padding-top: 20px;
+        padding-bottom: 17px;
+        width: 380px;
+        margin: 0 0 25px;
+    }
+    .box-text {
+        padding: 7px 10px 6px;
+        font-size: 22px;
+        letter-spacing: 5px;
+    }
+    .habitats__content h4 {
+        font-size: 15.2px;
+        margin: 0 0 11px;
+    }
+
+    .ht-op__icon {
+        width: 90px;
+        height: 90px;
+        margin: 0 0 11px;
+    }
+    .ht-op__tc h5 {
+        font-size: 13px;
+    }
+    .planta-slide-cont__inner .flt-img {
+        width: 300px !important;
+    }
+    .planta-slider {
+        --space-padding: 92px;
+    }
+    .planta-slider .owl-next {
+        width: 62px;
+    }
+    .tulum-option__icon {
+        width: 90px;
+        margin: 0 0 8px;
+    }
+    .tulum-option__cont h4 {
+        font-size: 14px;
+        margin: 0px 0 4px;
+    }
+    .tulum-option__cont p {
+        font-size: 12px;
+    }
+
+    .gallery-slider {
+        --arrow1-off: 46px;
+        max-width: 330px;
+    }
+    .gallery-slider .owl-nav button {
+        width: 22px;
+    }
+
+    .lifestyle-section__title .box-text {
+        width: 200px;
+    }
+
+}
+/* big-mobile-end */
