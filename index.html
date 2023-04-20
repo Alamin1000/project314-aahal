@@ -58,7 +58,7 @@
       <!-- offcanvas-start-end -->
 
       <!-- header-section -->
-      <header class="header-section">
+      <header class="header-section" id="sticky-header">
         <div class="header-in">
           <div class="container">
             <div class="header-section__inner">
@@ -98,7 +98,7 @@
       <!-- main -->
       <main>
         <!-- hero-section -->
-        <section class="hero-section" id="sticky-header">
+        <section class="hero-section">
           <div class="hero-video-bg">
             <video src="images/ship-in-sea.mp4" muted loop autoplay></video>
           </div>
@@ -109,7 +109,7 @@
               </div>
             </div>
             <div class="hero-cont">
-              <h4 class="mb-0">
+              <h4 class="mb-0 d-md-block d-none">
                 Vivimos en una época de transformación y cambio que invita a
                 reconectarnos con nuestro origen, con lo natural. <br />
                 Aahal te invita a fluir, a sentir, a vivir la vida de manera
@@ -118,7 +118,7 @@
               </h4>
               <a
                 href="https://www.youtube.com/watch?v=RwSga-zQy0I"
-                class="btn btn-primary mt-4 popup-video"
+                class="btn btn-primary mt-md-4 popup-video"
                 >Play video</a
               >
             </div>
@@ -133,7 +133,16 @@
           </div>
           <div class="habitats-section__in">
             <div class="habitats__left-image">
-              <img src="images/habitas-left-image.webp" alt="" />
+              <img
+                class="d-md-block d-none"
+                src="images/habitas-left-image.webp"
+                alt=""
+              />
+              <img
+                class="d-md-none"
+                src="images/habitas-left-image-mobile.webp"
+                alt=""
+              />
             </div>
             <div class="container">
               <div class="habitats-section__inner">

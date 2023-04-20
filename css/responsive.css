@@ -348,7 +348,8 @@
 
 @media (max-width: 768px) {
     .hero-cont {
-        display: none;
+        /* display: none; */
+        padding: calc(10vw - 26px) 0 calc(10vw - 10px);
     }
     .hero-logo {
         width: 110px;
@@ -361,7 +362,7 @@
         border-width: 2px;
     }
     .hero-section {
-        padding: 20vw 0;
+        padding: 20vw 0 0;
     }
 
     .section__title h2 {
@@ -766,6 +767,29 @@
 
     .lifestyle-section__title .box-text {
         width: 200px;
+    }
+
+
+    .box-text {
+        font-size: 15px !important;
+    }
+    .depart-slide__r__image {
+        width: 110px;
+    }
+    .depart-op__icon {
+        width: 60px;
+    }
+    .depart-op__txt h4 {
+        font-size: 15px;
+    }
+    .depart-slide__row {
+        --bs-gutter-x: 35px;
+    }
+    .depart-slider .owl-nav button {
+        width: 22px;
+    }
+    .depart-op-wrap {
+        gap: 25px;
     }
 
 }
