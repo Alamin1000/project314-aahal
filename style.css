@@ -170,6 +170,7 @@
 }
 *,::before,::after {
   box-sizing: border-box;
+  scroll-margin-top: var(--header-height);
 }
 body {
   font-size: 16px;
